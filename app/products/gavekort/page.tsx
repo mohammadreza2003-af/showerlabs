@@ -57,7 +57,7 @@ const Page = () => {
 
   return (
     <div>
-      <div className="relative p-6 max-w-[1400px] w-full mx-auto lg:grid lg:grid-cols-2 gap-8 mb-24 my-24 text-secondary-text">
+      <div className="relative p-6 max-w-[1400px] w-full mx-auto lg:grid lg:grid-cols-2 gap-8 mb-24 mt-32 text-secondary-text">
         <div>
           <Swiper
             modules={[Thumbs]}
