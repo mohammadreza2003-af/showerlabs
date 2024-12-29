@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .transition-3s {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
+
+@font-face {
+  font-family: "Value Sans Pro Bold";
+  src: url("/fonts/ValueSansPro-Bold.woff2") format("woff2");
+  font-style: normal;
+  /* font-weight: 700; */
+}
+
+@font-face {
+  font-family: "Value Sans Pro";
+  src: url("/fonts/ValueSansPro-Regular.woff2") format("woff2");
+  font-style: normal;
+  /* font-weight: 400; */
+}
+/* 
+@font-face {
+  font-family: "ITC Berkeley Old Style";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//showerlabs.dk/cdn/fonts/itc_berkeley_old_style/itcberkeleyoldstyle_n4.55789d0545068508bdece55c1c5daee962015f59.woff2?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=59c09dce92e9b7f70232fd2c0ae44b02e17b21f8fda2f8384d735df12e877154")
+      format("woff2"),
+    url("//showerlabs.dk/cdn/fonts/itc_berkeley_old_style/itcberkeleyoldstyle_n4.b18aed1ad959eb7887408cee82fdd0f8442b7d07.woff?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=5476fe13e648221d73ee21c7b372a3d85ebd0e0a899c4617c50c1be014620422")
+      format("woff");
+}
+
+@font-face {
+  font-family: "ITC Berkeley Old Style";
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//showerlabs.dk/cdn/fonts/itc_berkeley_old_style/itcberkeleyoldstyle_i4.55361271ea7c630cab45856bad6a774ec04f60ff.woff2?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=f5c32970070168a4da2d0b1a676077b63ce944e2cc6fbe1e1b326bf7b0a79710")
+      format("woff2"),
+    url("//showerlabs.dk/cdn/fonts/itc_berkeley_old_style/itcberkeleyoldstyle_i4.cf5a98a83b0dcdf60e672a993312dff687324c71.woff?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=04c76b80265a8dff749cd483395b3d8c2458506a36beb0542ee3c19e9cb84413")
+      format("woff");
+}
+
+@font-face {
+  font-family: Muli;
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//showerlabs.dk/cdn/fonts/muli/muli_n4.32796dd29ef52f78859bd8685b2d63db23ffd695.woff2?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=bdfc102fb6549324ce91c2f51f91cf818106ee49a9cebb34d93d1b41e09f01c4")
+      format("woff2"),
+    url("//showerlabs.dk/cdn/fonts/muli/muli_n4.3fd3d04f0161ea06f02880ae41f4a348bcfc9837.woff?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=b5c4f7d1d59b7a5c3f78605b99d505bc418772b4cbb993177d803626ba08799c")
+      format("woff");
+}
+
+@font-face {
+  font-family: Muli;
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//showerlabs.dk/cdn/fonts/muli/muli_i4.35f8db21fe967558c304be690dd416d196e023df.woff2?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=d3432c81cef826dc596dc1392048b34d994cc3562d913c2eaecef3824c3ed5cc")
+      format("woff2"),
+    url("//showerlabs.dk/cdn/fonts/muli/muli_i4.49d5ae01df0892a3c325d0967a535cc25f82f534.woff?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=b4858603f69b4dd563d8b9a92ced4e55b03bc9352f156bd4e12d3156689a9167")
+      format("woff");
+}
+
+@font-face {
+  font-family: Muli;
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: url("//showerlabs.dk/cdn/fonts/muli/muli_n7.5088b0a619cd5498c63f83358f68a9bd968d602f.woff2?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=d800f0c07dd31122ad201928696a273a508e8511387cbda1f63e90ecb5b2c55a")
+      format("woff2"),
+    url("//showerlabs.dk/cdn/fonts/muli/muli_n7.323924fb8ac4a0142319fa4d2a9a47d63188d935.woff?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=e02ead1cdd844cb0d8e95b863300471361c0e425a7363c6151b4538608e56fe8")
+      format("woff");
+}
+
+@font-face {
+  font-family: Muli;
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+  src: url("//showerlabs.dk/cdn/fonts/muli/muli_i7.18e4bc072d0cb2cf459d8de1aac52898d2067eb8.woff2?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=1f927e9058792bd1879d7fd2526921cdc0324bd59233a0633ad87eac8f6b33af")
+      format("woff2"),
+    url("//showerlabs.dk/cdn/fonts/muli/muli_i7.2dd593be04d6030193d1ab12a136e99dff529cf9.woff?h1=c2hvd2VyaGVhZC1zdG9yZS0xLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=c2hvd2VybGFicy1kay5teXNob3BpZnkuY29t&h3=c2hvd2VybGFicy5kaw&h4=YWNjb3VudC5zaG93ZXJsYWJzLmRr&hmac=c198421bb02a2fa77ad41496aace0d51fe0c3d40e8e651c9424173e4c35fcb33")
+      format("woff");
+} */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
