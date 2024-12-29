@@ -1,4 +1,5 @@
 import { miloBrusehoved } from "@/constants/data";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
@@ -33,13 +34,13 @@ const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
                 )
               }
             >
-              <video
+              <Image
                 width="100"
                 height="300"
-                poster={`/images/products/milo-brusehoved/other-say/${
+                src={`/images/products/milo-brusehoved/other-say/${
                   index + 1
                 }.jpg`}
-                muted
+                alt=""
               />
             </div>
           </SwiperSlide>
