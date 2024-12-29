@@ -57,6 +57,7 @@ type PurchaseOption = {
 
 type OtherSaying = {
   source: string;
+  poster: string;
 };
 
 type FAQ = {

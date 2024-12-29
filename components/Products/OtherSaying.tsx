@@ -23,7 +23,7 @@ const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
           },
         }}
       >
-        {miloBrusehoved.otherSaying.map((_, index) => (
+        {miloBrusehoved.otherSaying.map((item, index) => (
           <SwiperSlide key={`other-say-${Math.random()}`}>
             <div
               key={`video-${index}`}
@@ -34,14 +34,7 @@ const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
                 )
               }
             >
-              <Image
-                width="100"
-                height="300"
-                src={`/images/products/milo-brusehoved/other-say/${
-                  index + 1
-                }.jpg`}
-                alt=""
-              />
+              <Image width="100" height="300" src={item.poster} alt="" />
             </div>
           </SwiperSlide>
         ))}
