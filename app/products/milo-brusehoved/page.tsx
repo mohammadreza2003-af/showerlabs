@@ -16,6 +16,7 @@ import MiloShowerInfo from "@/components/Products/MiloShowerInfo";
 import ProductHelp from "@/components/Products/ProductHelp";
 import ProductInformation from "@/components/Products/ProductInformation";
 import FilterInfo from "@/components/Products/FilterInfo";
+import OtherSaying from "@/components/Products/OtherSaying";
 import { useCart } from "@/context/CartContext";
 
 const Page = () => {
@@ -251,105 +252,7 @@ const Page = () => {
               <strong className="font-valueSansProBold">1-3 hverdage.</strong>
             </p>
           </div>
-          <div className="w-full">
-            <Swiper
-              spaceBetween={3}
-              slidesPerView={3}
-              breakpoints={{
-                640: {
-                  slidesPerView: 4,
-                  spaceBetween: 10,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 15,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 12,
-                },
-              }}
-            >
-              <SwiperSlide>
-                <div
-                  className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
-                  onClick={() => openPopup(`/images/products/other/1.mp4`)}
-                >
-                  <Image
-                    width="100"
-                    height="300"
-                    src="/images/products/other/1.jpg"
-                    alt="saying"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
-                  onClick={() => openPopup(`/images/products/other/2.mp4`)}
-                >
-                  <Image
-                    width="100"
-                    height="300"
-                    src="/images/products/other/2.jpg"
-                    alt="saying"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
-                  onClick={() => openPopup(`/images/products/other/3.mp4`)}
-                >
-                  <Image
-                    width="100"
-                    height="300"
-                    src="/images/products/other/3.jpg"
-                    alt="saying"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
-                  onClick={() => openPopup(`/images/products/other/4.mp4`)}
-                >
-                  <Image
-                    width="100"
-                    height="300"
-                    src="/images/products/other/4.jpg"
-                    alt="saying"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
-                  onClick={() => openPopup(`/images/products/other/5.mp4`)}
-                >
-                  <Image
-                    width="100"
-                    height="300"
-                    src="/images/products/other/5.jpg"
-                    alt="saying"
-                  />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
-                  onClick={() => openPopup(`/images/products/other/6.mp4`)}
-                >
-                  <Image
-                    width="100"
-                    height="300"
-                    src="/images/products/other/6.jpg"
-                    alt="saying"
-                  />
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
+          <OtherSaying openPopup={openPopup} />
           <div className="w-full">
             {miloBrusehoved.faqs.map((item, index) => (
               <Accordion
