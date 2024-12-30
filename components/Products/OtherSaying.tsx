@@ -1,6 +1,32 @@
-import { miloBrusehoved } from "@/constants/data";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+const otherSayingItems = [
+  {
+    source: "/images/prodcuts/milo-brusehoved/other-say/1.mp4",
+    poster: "/images/products/milo-brusehoved/other-say/1.jpg",
+  },
+  {
+    source: "/images/prodcuts/milo-brusehoved/other-say/2.mp4",
+    poster: "/images/products/milo-brusehoved/other-say/2.jpg",
+  },
+  {
+    source: "/images/prodcuts/milo-brusehoved/other-say/3.mp4",
+    poster: "/images/products/milo-brusehoved/other-say/3.jpg",
+  },
+  {
+    source: "/images/prodcuts/milo-brusehoved/other-say/4.mp4",
+    poster: "/images/products/milo-brusehoved/other-say/4.jpg",
+  },
+  {
+    source: "/images/prodcuts/milo-brusehoved/other-say/5.mp4",
+    poster: "/images/products/milo-brusehoved/other-say/5.jpg",
+  },
+  {
+    source: "/images/prodcuts/milo-brusehoved/other-say/6.mp4",
+    poster: "/images/products/milo-brusehoved/other-say/6.jpg",
+  },
+];
 
 const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
   return (
@@ -23,7 +49,7 @@ const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
           },
         }}
       >
-        {miloBrusehoved.otherSaying.map((item, index) => (
+        {otherSayingItems.map((item, index) => (
           <SwiperSlide key={`other-say-${Math.random()}`}>
             <div
               key={`video-${index}`}

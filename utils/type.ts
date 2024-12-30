@@ -55,11 +55,6 @@ type PurchaseOption = {
   products: product[];
 };
 
-type OtherSaying = {
-  source: string;
-  poster: string;
-};
-
 type FAQ = {
   question: string;
   answer: string;
@@ -69,7 +64,6 @@ type MiloBrusehoved = {
   miloBrusehovedLabels: Label[];
   description: string;
   purchaseOptions: PurchaseOption[];
-  otherSaying: OtherSaying[];
   faqs: FAQ[];
 };
 
