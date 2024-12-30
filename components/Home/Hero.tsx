@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Hero = () => {
   return (
     <div className="w-full sm:bg-[url('/images/hero.jpg')] sm:bg-right-top bg-[url('/images/MOBILEHERO.jpg')] bg-cover bg-left-top  bg-no-repeat min-h-[90vh] flex sm:items-center items-end justify-center text-white mt-16">
@@ -10,9 +12,12 @@ const Hero = () => {
             Brusehovedet, der
             <br /> filtrerer dit vand.
           </h1>
-          <button className="bg-primary-text hover:bg-transparent px-8 md:px-12 py-2 text-lg md:text-xl transition-3s border-4 hover:border-white border-primary-text font-semibold rounded-lg">
+          <Link
+            href="/products/milo-brusehoved"
+            className="bg-primary-text hover:bg-transparent px-8 md:px-12 py-2 text-lg md:text-xl transition-3s border-4 hover:border-white border-primary-text font-semibold rounded-lg"
+          >
             Køb i dag
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface props {
   item: {
@@ -6,16 +7,20 @@ interface props {
     offer: number;
     price: number;
     name: string;
+    path: string;
   };
 }
 
 const HeroProduct = ({ item }: props) => {
   return (
-    <div className="flex items-center flex-col justify-center w-full gap-3 text-button-text-secondary">
+    <Link
+      href={item.path}
+      className="flex items-center flex-col justify-center w-full gap-3 text-button-text-secondary"
+    >
       <div className="rounded-lg overflow-hidden">
         <Image src={item.img} width={350} height={350} alt="" />
       </div>
-      <button className="font-valueSansProBold text-lg">{item.name}</button>
+      <p className="font-valueSansProBold text-lg">{item.name}</p>
       <span className="flex gap-2 items-center">
         {item.offer ? (
           <>
@@ -28,7 +33,7 @@ const HeroProduct = ({ item }: props) => {
           `${item.price} kr`
         )}
       </span>
-    </div>
+    </Link>
   );
 };
 

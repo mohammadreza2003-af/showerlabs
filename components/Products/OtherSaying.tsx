@@ -34,7 +34,7 @@ const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
                 )
               }
             >
-              <Image width="100" height="300" src={item.poster} alt="" />
+              <Image width="100" height="300" src={item.poster} alt="saying" />
             </div>
           </SwiperSlide>
         ))}
