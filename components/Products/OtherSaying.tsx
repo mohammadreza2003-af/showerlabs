@@ -3,28 +3,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const otherSayingItems = [
   {
-    source: "/images/prodcuts/milo-brusehoved/other-say/1.mp4",
-    poster: "/images/products/milo-brusehoved/other-say/1.jpg",
+    source: "/images/products/other/1.mp4",
+    poster: "/images/products/other/1.jpg",
   },
   {
-    source: "/images/prodcuts/milo-brusehoved/other-say/2.mp4",
-    poster: "/images/products/milo-brusehoved/other-say/2.jpg",
+    source: "/images/products/other/2.mp4",
+    poster: "/images/products/other/2.jpg",
   },
   {
-    source: "/images/prodcuts/milo-brusehoved/other-say/3.mp4",
-    poster: "/images/products/milo-brusehoved/other-say/3.jpg",
+    source: "/images/products/other/3.mp4",
+    poster: "/images/products/other/3.jpg",
   },
   {
-    source: "/images/prodcuts/milo-brusehoved/other-say/4.mp4",
-    poster: "/images/products/milo-brusehoved/other-say/4.jpg",
+    source: "/images/products/other/4.mp4",
+    poster: "/images/products/other/4.jpg",
   },
   {
-    source: "/images/prodcuts/milo-brusehoved/other-say/5.mp4",
-    poster: "/images/products/milo-brusehoved/other-say/5.jpg",
+    source: "/images/products/other/5.mp4",
+    poster: "/images/products/other/5.jpg",
   },
   {
-    source: "/images/prodcuts/milo-brusehoved/other-say/6.mp4",
-    poster: "/images/products/milo-brusehoved/other-say/6.jpg",
+    source: "/images/products/other/6.mp4",
+    poster: "/images/products/other/6.jpg",
   },
 ];
 
@@ -55,9 +55,7 @@ const OtherSaying = ({ openPopup }: { openPopup: (value: string) => void }) => {
               key={`video-${index}`}
               className="w-[100px] overflow-hidden border-4 border-double border-primary-text rounded-lg"
               onClick={() =>
-                openPopup(
-                  `/images/products/milo-brusehoved/other-say/${index + 1}.mp4`
-                )
+                openPopup(`/images/products/other/${index + 1}.mp4`)
               }
             >
               <Image width="100" height="300" src={item.poster} alt="saying" />
