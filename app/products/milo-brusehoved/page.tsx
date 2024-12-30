@@ -16,7 +16,6 @@ import MiloShowerInfo from "@/components/Products/MiloShowerInfo";
 import ProductHelp from "@/components/Products/ProductHelp";
 import ProductInformation from "@/components/Products/ProductInformation";
 import FilterInfo from "@/components/Products/FilterInfo";
-import OtherSaying from "@/components/Products/OtherSaying";
 import { useCart } from "@/context/CartContext";
 
 const Page = () => {
